@@ -3,6 +3,8 @@
 .project
 .settings/
 
+.metadata/
+
 ### VisualStudioCode ###
 .vscode/*
 !.vscode/settings.json

@@ -1,5 +1,4 @@
 #!groovy
-stage 'Dev'
 node ('master') {
 
    // Mark the code checkout 'stage'....
