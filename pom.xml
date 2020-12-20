@@ -32,7 +32,7 @@
 		<wicket.version>9.2.0</wicket.version>
 		<jetty9.version>11.0.0</jetty9.version>
 		<log4j.version>2.14.0</log4j.version>
-		<junit.version>4.12</junit.version>
+		<junit.version>4.13.1</junit.version>
 		<de.agilecoders.wicket.version>4.0.2</de.agilecoders.wicket.version>
 		<maven.eclipse.plugins.version>2.10</maven.eclipse.plugins.version>
 		<maven.versions.plugin.version>2.2</maven.versions.plugin.version>
