@@ -36,20 +36,18 @@ public class Login extends AbstractBasePage {
 			IndicatingAjaxButton submit = new IndicatingAjaxButton("submit", Model.of("Submit")) {
 
 				private static final long serialVersionUID = 3720720385904525027L;
-				
-				@Override
-				protected void onSubmit(AjaxRequestTarget target, Form<?> form) {
-					//super.onSubmit(target, form);
-					target.add(LoginForm.this);
-				}
-				
-				@Override
-				protected void onError(AjaxRequestTarget target, Form<?> form) {
 
-					//super.onError(target, form);
+				@Override
+				protected void onSubmit(AjaxRequestTarget target) {
 					target.add(LoginForm.this);
+					super.onSubmit(target);
 				}
-				
+
+				@Override
+				protected void onError(AjaxRequestTarget target) {
+					target.add(LoginForm.this);
+					super.onError(target);
+				}
 			};
 			add(submit);
 		} 

@@ -14,7 +14,7 @@ import de.agilecoders.wicket.core.Bootstrap;
 import de.agilecoders.wicket.core.markup.html.bootstrap.html.HtmlTag;
 import de.agilecoders.wicket.core.markup.html.bootstrap.html.IeEdgeMetaTag;
 import de.agilecoders.wicket.core.markup.html.bootstrap.html.MetaTag;
-import de.agilecoders.wicket.core.markup.html.bootstrap.html.OptimizedMobileViewportMetaTag;
+import de.agilecoders.wicket.core.markup.html.bootstrap.html.MobileViewportMetaTag;
 import de.agilecoders.wicket.extensions.markup.html.bootstrap.icon.FontAwesomeCssReference;
 
 public abstract class AbstractBasePage extends WebPage {
@@ -29,7 +29,7 @@ public abstract class AbstractBasePage extends WebPage {
 		super(parameters);
 		
 		add(new HtmlTag("html"));
-        add(new OptimizedMobileViewportMetaTag("viewport"));
+        add(new MobileViewportMetaTag("viewport"));
         add(new IeEdgeMetaTag("ie-edge"));
         add(new MetaTag("description", Model.of("description"), Model.of("Apache Wicket Bootstrap Application")));
         add(new MetaTag("author", Model.of("author"), Model.of("Moeketsi Mokoena <tsw603gp@gmail.com>")));

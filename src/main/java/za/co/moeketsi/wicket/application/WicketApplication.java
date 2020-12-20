@@ -6,7 +6,6 @@ import org.apache.wicket.RuntimeConfigurationType;
 import org.apache.wicket.authroles.authentication.AbstractAuthenticatedWebSession;
 import org.apache.wicket.authroles.authentication.AuthenticatedWebApplication;
 import org.apache.wicket.markup.html.WebPage;
-import org.apache.wicket.util.time.Duration;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -29,11 +28,13 @@ import de.agilecoders.wicket.less.BootstrapLess;
 import de.agilecoders.wicket.themes.markup.html.bootswatch.BootswatchTheme;
 import de.agilecoders.wicket.themes.markup.html.bootswatch.BootswatchThemeProvider;
 
+import java.time.Duration;
+
 /**
  * Application object for your web application.
  * If you want to run this application without deploying, run the Start class.
  * 
- * @see za.co.mycompany.mywicketproject.Start#main(String[])
+ * @see //za.co.moeketsi.wicket.application.WicketApplication.Start#main(String[])
  */
 public class WicketApplication extends AuthenticatedWebApplication
 {
@@ -86,7 +87,7 @@ public class WicketApplication extends AuthenticatedWebApplication
 			getDebugSettings().setComponentUseCheck(true);
 			getDebugSettings().setDevelopmentUtilitiesEnabled(true);
 
-			getResourceSettings().setResourcePollFrequency(Duration.ONE_SECOND);
+			getResourceSettings().setResourcePollFrequency(Duration.ofSeconds(1000));
 		}
 
 		ResourceBundles bundles = getResourceBundles();
