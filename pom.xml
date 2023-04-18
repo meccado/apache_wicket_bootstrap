@@ -30,7 +30,7 @@
 	</licenses>
 	<properties>
 		<wicket.version>9.2.0</wicket.version>
-		<jetty9.version>11.0.6</jetty9.version>
+		<jetty9.version>11.0.14</jetty9.version>
 		<log4j.version>2.14.0</log4j.version>
 		<junit.version>4.13.1</junit.version>
 		<de.agilecoders.wicket.version>4.0.2</de.agilecoders.wicket.version>
